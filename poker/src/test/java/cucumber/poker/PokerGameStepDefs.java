@@ -5,6 +5,7 @@ import static org.junit.Assert.assertThat;
 import cucumber.annotation.ja.ならば;
 import cucumber.annotation.ja.もし;
 import cucumber.annotation.ja.前提;
+import cucumber.poker.Card.Suit;
 
 public class PokerGameStepDefs {
 
@@ -37,9 +38,40 @@ public class PokerGameStepDefs {
 		assertThat(sut.pat(), equalTo(Pat.NO_PAIR));
 	}
 
+	@ならば("^([SHDC])のフラッシュであるべき$")
+	public void フラッシュであるべき(char arg) {
+		
+		Card.Suit suit;
+		
+		switch (arg) {
+		case 'D' :
+			suit = Suit.DIAMONDS;
+			break;
+		case 'S' :
+			suit = Suit.SPADES;
+			break;
+		case 'H' :
+			suit = Suit.HEARTS;
+			break;
+		case 'C' :
+			suit = Suit.CLUBS;
+			break;
+		default :
+			throw new IllegalArgumentException();
+		}
+		Pat expected = new Pat.Flash(suit);
+		assertThat(sut.pat(), equalTo(expected));
+	}
+
 	@ならば("^(\\d+)のワンペアであるべき$")
 	public void ワンペアであるべき(int no) {
 		Pat expected = new Pat.OnePair(no);
+		assertThat(sut.pat(), equalTo(expected));
+	}
+
+	@ならば("^(\\d+)のスリーカードであるべき$")
+	public void スリーカードであるべき(int no) {
+		Pat expected = new Pat.ThreeCard(no);
 		assertThat(sut.pat(), equalTo(expected));
 	}
 }

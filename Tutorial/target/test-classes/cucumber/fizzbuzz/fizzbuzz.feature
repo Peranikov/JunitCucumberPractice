@@ -17,3 +17,5 @@
     |9|Fizz|
     |10|Buzz|
     |15|FizzBuzz|
+    |30|FizzBuzz|
+    |45|FizzBuzz|
