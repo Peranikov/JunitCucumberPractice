@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="PokerGameAcceptanceTest" project="poker" tests="24" started="24" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumber.poker.PokerGameAcceptanceTest" time="0.035">
+    <testsuite name="フィーチャ: ポーカーゲーム" time="0.035">
+      <testsuite name="役なし" time="0.005">
+        <testcase name="前提手札にS1,H4,D6,D8,C3が配られた" classname="前提手札にS1,H4,D6,D8,C3が配られた" time="0.0"/>
+        <testcase name="もしチェンジしない" classname="もしチェンジしない" time="0.005"/>
+        <testcase name="ならばノーペアであるべき" classname="ならばノーペアであるべき" time="0.0"/>
+      </testsuite>
+      <testsuite name="シナリオ: ノーチェンジ/ワンペア" time="0.001">
+        <testcase name="前提手札にS1,H1,D6,D8,C3が配られた" classname="前提手札にS1,H1,D6,D8,C3が配られた" time="0.0"/>
+        <testcase name="もしチェンジしない" classname="もしチェンジしない" time="0.001"/>
+        <testcase name="ならば1のワンペアであるべき" classname="ならば1のワンペアであるべき" time="0.0"/>
+      </testsuite>
+      <testsuite name="シナリオテンプレート: ノーチェンジの場合" time="0.025">
+        <testsuite name="例:" time="0.025">
+          <testsuite name="| S1,H4,D6,D8,C3 | ノーペア |" time="0.001">
+            <testcase name="前提手札にS1,H4,D6,D8,C3が配られた" classname="前提手札にS1,H4,D6,D8,C3が配られた" time="0.0"/>
+            <testcase name="もしチェンジしない" classname="もしチェンジしない" time="0.001"/>
+            <testcase name="ならばノーペアであるべき" classname="ならばノーペアであるべき" time="0.0"/>
+          </testsuite>
+          <testsuite name="| S1,S2,S3,S4,C9 | ノーペア |" time="0.001">
+            <testcase name="前提手札にS1,S2,S3,S4,C9が配られた" classname="前提手札にS1,S2,S3,S4,C9が配られた" time="0.0"/>
+            <testcase name="もしチェンジしない" classname="もしチェンジしない" time="0.001"/>
+            <testcase name="ならばノーペアであるべき" classname="ならばノーペアであるべき" time="0.0"/>
+          </testsuite>
+          <testsuite name="| H1,H4,D2,D8,D9 | ノーペア |" time="0.001">
+            <testcase name="前提手札にH1,H4,D2,D8,D9が配られた" classname="前提手札にH1,H4,D2,D8,D9が配られた" time="0.0"/>
+            <testcase name="もしチェンジしない" classname="もしチェンジしない" time="0.001"/>
+            <testcase name="ならばノーペアであるべき" classname="ならばノーペアであるべき" time="0.0"/>
+          </testsuite>
+          <testsuite name="| H1,H4,D1,D8,D9 | 1のワンペア |" time="0.003">
+            <testcase name="前提手札にH1,H4,D1,D8,D9が配られた" classname="前提手札にH1,H4,D1,D8,D9が配られた" time="0.002"/>
+            <testcase name="もしチェンジしない" classname="もしチェンジしない" time="0.001"/>
+            <testcase name="ならば1のワンペアであるべき" classname="ならば1のワンペアであるべき" time="0.0"/>
+          </testsuite>
+          <testsuite name="| H3,H9,D1,D8,D9 | 9のワンペア |" time="0.002">
+            <testcase name="前提手札にH3,H9,D1,D8,D9が配られた" classname="前提手札にH3,H9,D1,D8,D9が配られた" time="0.001"/>
+            <testcase name="もしチェンジしない" classname="もしチェンジしない" time="0.001"/>
+            <testcase name="ならば9のワンペアであるべき" classname="ならば9のワンペアであるべき" time="0.0"/>
+          </testsuite>
+          <testsuite name="| H3,H9,D1,S9,D9 | 9のスリーカード |" time="0.004">
+            <testcase name="前提手札にH3,H9,D1,S9,D9が配られた" classname="前提手札にH3,H9,D1,S9,D9が配られた" time="0.001"/>
+            <testcase name="もしチェンジしない" classname="もしチェンジしない" time="0.001"/>
+            <testcase name="ならば9のスリーカードであるべき" classname="ならば9のスリーカードであるべき" time="0.002"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

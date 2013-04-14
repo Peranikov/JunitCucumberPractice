@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="FizzBuzzAcceptanceTest" project="Tutorial" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumber.fizzbuzz.FizzBuzzAcceptanceTest" time="0.0">
+    <testcase name="initializationError" classname="cucumber.fizzbuzz.FizzBuzzAcceptanceTest" time="0.0">
+      <error>java.lang.TypeNotPresentException: Type Cucumber not present
+	at sun.reflect.annotation.TypeNotPresentExceptionProxy.generateException(TypeNotPresentExceptionProxy.java:28)
+	at sun.reflect.annotation.AnnotationInvocationHandler.invoke(AnnotationInvocationHandler.java:57)
+	at com.sun.proxy.$Proxy4.value(Unknown Source)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:21)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:26)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.&lt;init&gt;(JUnit4TestReference.java:33)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestClassReference.&lt;init&gt;(JUnit4TestClassReference.java:25)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:48)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: Cucumber
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:249)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:95)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:107)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:31)
+	at sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:370)
+	at sun.reflect.annotation.AnnotationParser.parseClassValue(AnnotationParser.java:351)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:280)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation(AnnotationParser.java:222)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:69)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:52)
+	at java.lang.Class.initAnnotationsIfNecessary(Class.java:3079)
+	at java.lang.Class.getAnnotation(Class.java:3038)
+	at org.junit.internal.builders.IgnoredBuilder.runnerForClass(IgnoredBuilder.java:10)
+	... 12 more
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
