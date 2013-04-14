@@ -1,0 +1,22 @@
+package cucumber.fizzbuzz;
+
+public class Fizzbuzz {
+	
+	int _val;
+	
+	public Fizzbuzz(int val) {
+		_val = val;
+	}
+	
+	public static String result() {
+		return String.format("%d", _val);
+	}
+	
+	public static boolean isFizz(int val) {
+		return val % 3 == 0 ? true : false;
+	}
+
+	public static boolean isBuzz(int val) {
+		return val % 5 == 0 ? true : false;
+	}
+}

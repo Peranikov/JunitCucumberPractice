@@ -1,0 +1,8 @@
+package cucumber.fizzbuzz;
+
+import org.junit.runner.RunWith;
+import cucumber.junit.Cucumber;
+
+public class FizzBuzzAcceptaneTest {
+
+}

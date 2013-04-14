@@ -1,0 +1,18 @@
+package cucumber.fizzbuzz;
+
+import cucumber.annotation.ja.*;
+import cucumber.runtime.PendingException;
+
+public class FizzbuzzStepDefs {
+	@前提("^(\\d+)の場合$")
+	public void nの場合(int n) throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@ならば("^(\\d+)であるべき$")
+	public void であるべき(int arg1) throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+}

@@ -1,0 +1,28 @@
+package cucumber.fizzbuzz;
+
+import org.hamcrest.CoreMatchers;
+import cucumber.annotation.ja.ならば;
+import cucumber.annotation.ja.前提;
+import cucumber.runtime.PendingException;
+import org.junit.Assert;
+
+public class FizzbuzzStepDefs {
+	
+	private Fizzbuzz _fizzbuzz;
+	
+	@前提("^(\\d+)の場合$")
+	public void nの場合(int n) throws Throwable {
+		_fizzbuzz = new Fizzbuzz(n);
+	}
+
+	@ならば("^(\\d+)であるべき$")
+	public void nであるべき(int val) throws Throwable {
+		Assert.assertThat(_fizzbuzz.result(), is)
+	}
+
+	@ならば("Fizzであるべき$")
+	public void Fizzであるべき(int arg1) throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="FizzBuzzAcceptanceTest" project="Tutorial" tests="2" started="2" failures="0" errors="0" ignored="2">
+  <testsuite name="cucumber.fizzbuzz.FizzBuzzAcceptanceTest" time="0.0">
+    <testsuite name="フィーチャ: フィズバズ" time="0.0">
+      <testsuite name="シナリオテンプレート: nの場合" time="0.0">
+        <testsuite name="例:" time="0.0">
+          <testsuite name="| 0 | 0 |" time="0.0">
+            <testcase name="前提0の場合" classname="前提0の場合" time="0.0" ignored="true"/>
+            <testcase name="ならば0であるべき" classname="ならば0であるべき" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

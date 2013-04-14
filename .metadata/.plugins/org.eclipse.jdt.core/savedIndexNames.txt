@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+/Users/MatsukuboYuto/git/JunitCucumberPractice/.metadata/.plugins/org.eclipse.jdt.core
+2993925955.index
+3783138058.index
+1068284649.index
+674104722.index
+623194058.index

@@ -1,0 +1,31 @@
+package cucumber.fizzbuzz;
+
+public class Fizzbuzz {
+	
+	private int _val;
+	public static String Fizz = "Fizz";
+	
+	public Fizzbuzz(int val) {
+		_val = val;
+	}
+	
+	public String result() {
+		if (isFizzBuzz(this._val)) return "FizzBuzz";
+		if (isFizz(this._val)) return "Fizz";
+		if (isBuzz(this._val)) return "Buzz";
+		
+		return String.format("%d", this._val);
+	}
+	
+	public static boolean isFizz(int val) {
+		return val % 3 == 0 ? true : false;
+	}
+
+	public static boolean isBuzz(int val) {
+		return val % 5 == 0 ? true : false;
+	}
+
+	public static boolean isFizzBuzz(int val) {
+		return val % 3 == 0 && val % 5 == 0 ? true : false;
+	}
+}
